@@ -16,6 +16,7 @@ ENV/
 
 # Jupyter
 .ipynb_checkpoints/
+Untitled*.ipynb
 
 # Local environment files
 .env
