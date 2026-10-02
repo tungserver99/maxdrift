@@ -1,0 +1,51 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Generated experiment outputs and logs
+outputs/
+logs/
+logs_layer/
+*.log
+GuidedQuant/logs/
+GuidedQuant/logs_layer/
+
+# Model, data, and cache artifacts
+GuidedQuant/cache/
+Model-Fingerprint/dataset/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.arrow
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

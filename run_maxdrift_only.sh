@@ -1,0 +1,19 @@
+python main.py \
+  --fp_model cnut1648/LLaMA2-7B-fingerprinted-SFT \
+  --bits 4 \
+  --rho 0.10 \
+  --num_groups 4 \
+  --dataset c4 \
+  --num_examples 128 \
+  --seq_len 2048 \
+  --max_sweeps 10 \
+  --objective_dtype fp32 \
+  --objective_device auto \
+  --skip_guidedquant \
+  --gq_lnq_checkpoint GuidedQuant/cache/layerwise_quantized/LLaMA2-7B-fingerprinted-SFT-w4-c4_s128_blk2048_g4_iter3_cd4 \
+  --gq_hessians_dir GuidedQuant/cache/hessians/LLaMA2-7B-fingerprinted-SFT-c4_s128_blk2048_g4 \
+  --output_dir outputs/maxdrift_gq/LLaMA2-7B-fingerprinted-SFT/w4_rho0.10 \
+  --packed_output_dir outputs/maxdrift_gq/LLaMA2-7B-fingerprinted-SFT/w4_rho0.10_packed \
+  --overwrite \
+  --pack \
+  --run_ppl
